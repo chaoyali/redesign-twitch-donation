@@ -1,0 +1,613 @@
+ html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-size: 14px;
+}
+
+.modal {
+    /*display: none;  Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    height: 590px;
+
+    /*border: 1px solid #888;*/
+    /*width: 80%;*/
+    max-width: 555px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #C0ABE6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #181422;
+    color: white;
+    height: 70px;
+    position: relative;
+}
+
+.modal-header h2{
+    /*display: inline-block;*/
+    /*font-size: 22.4px;*/
+    font-size: 1.3rem;
+    -web-margin-before: 1.3rem;
+    position: absolute;
+    top: 0.7rem; 
+    left: 80px;
+    font-weight: normal;
+
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.profile-photo {
+    background: url("http://chaoyali.com/image/me/dog.JPG") 50% 50% no-repeat; 
+    /*width: 100%;*/
+    display: inline-block;
+    overflow:hidden;
+    background-size:cover;
+    border-radius: 100%
+}
+
+#profile-photo-header {
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+#profile-photo-announcement {
+    width: 40px;
+    height: 40px;
+    /*margin-top: -20px;*/
+    top: -30px;
+    position: relative;
+}
+
+.text-link {
+    color: #C0ABE6;
+    text-decoration: none;
+}
+
+.tab-wrap { 
+  /*width: 50%; */
+  /*margin-left: 20%; */
+  position: relative; 
+  display: flex; 
+  height: 45px;
+  /*top: -106px; */
+} 
+
+input[type="radio"][name="tabs"] { 
+  position: absolute; 
+  z-index: -1; 
+} 
+
+input[type="radio"][name="tabs"]:checked + .tab-label-content label { 
+  color: #6441A4; 
+} 
+
+input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content { 
+  display: block; 
+} 
+
+input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide { 
+  left: calc((100% / 3) * 0); 
+} 
+
+input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide { 
+  left: calc((100% / 3) * 1); 
+} 
+
+input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide { 
+  left: calc((100% / 3) * 2); 
+} 
+
+input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide { 
+  left: 0; 
+} 
+
+label { 
+  cursor: pointer; 
+  /*color: rgba(255, 255, 255, 0.8); */
+  color: black;
+  /*background-color: #00bcd4; */
+  box-sizing: border-box; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  height: 45px;
+  transition: color 0.2s ease; 
+  width: 100%; 
+} 
+
+.slide { 
+  background: #6441A4; 
+  width: calc(100% / 3); 
+  height: 4px; 
+  position: absolute; 
+  left: 0; 
+  top: calc(100% - 4px); 
+  transition: left 0.3s ease-out; 
+} 
+
+.tab-label-content { 
+  width: 100%; 
+} 
+
+.tab-label-content .tab-content { 
+  position: absolute; 
+    top: 70px;
+  left: 0px; 
+  line-height: 130%; 
+  display: none; 
+} 
+
+/*#tab3-content  .tab-content {
+    display: block;
+}
+*/
+
+
+@media screen and (max-width: 800px) { 
+  h1 { 
+    padding: 40px 0 90px 10%; 
+  } 
+/*  .tab-wrap { 
+    width: 80%; margin-left: 10%; top: -106px; 
+  } */
+} 
+
+.announcement {
+    position: relative;
+    left: 25px;
+}
+
+.announcement p {
+    position: relative;
+/*    width: 80%;
+    top: -5px;
+    left: 40px;*/
+    display: inline-block;
+
+}
+
+.tabs-border {
+    position: absolute;
+    width: 100%;
+    top: 116px;
+}
+
+
+.donation-input {
+    background: #EFEEF1;
+    width: 95%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 20px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/*.donation-input-wrap {}*/
+.donation-input-wrap .donation-input-title{
+    width: 30%;
+    float: left;
+}
+
+.donation-input-wrap .donation-input-content {
+    width: 70%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.donation-input-wrap .donation-input-content .button {
+    cursor: pointer;
+    width: 28%;
+    height: 30px;
+    margin: 1% 2%;
+    background: #181422;
+    border: none;
+    color: white;
+    /*font: */
+}
+
+.donation-input-wrap .donation-input-content .button:focus {
+    outline:0;
+}
+
+.donation-input-wrap .donation-input-content .button.selected {
+    background-color: #6441A4;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.donation-input-wrap .donation-input-content #donation-result {
+    margin-left: 2%;
+}
+
+#donation-result p {
+    display: inline-block;
+}
+
+#donation-result input {
+    width: 50px;
+    height: 20px;
+    border: 1px solid #dad8de;
+    color: #706a7c;
+    box-sizing: border-box;
+    background: white;
+    font: inherit;
+    text-align: center;
+}
+
+#donation-result input:focus {
+    outline: none !important;
+    box-shadow: 0 0 2px gray;
+    text-align: center;
+
+}
+
+.donation-input-wrap .donation-input-message {
+    width: 70%;
+    float: left;
+}
+
+#donation-message textarea{
+    width: 93%;
+    height: 60px;
+    margin-left: 2%;
+    resize: none;
+    border: 1px solid #dad8de;
+    color: #706a7c;
+    line-height: 28px;
+    font: inherit;
+    box-sizing: border-box;
+    background: white;
+    padding: 7px;
+}
+
+textarea:focus {
+    outline: none !important;
+    /*border:1px solid red;*/
+    box-shadow: 0 0 2px gray;
+}
+
+.donation-input hr {
+    margin: 20px 0px;
+}
+
+#donate-button {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    background: #6441A4;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#donate-button:hover {
+    background: #9C71EA;
+}
+
+
+
+
+
+
+/***************************************/
+
+.talk-bubble {
+    /*margin: 40px;*/
+    display: inline-block;
+    position: relative;
+    /*width: 200px;*/
+    width: 80%;
+    height: auto;
+    background-color: #E3DFDF;
+    left: 40px;
+}
+.border{
+  border: 8px solid #666;
+}
+
+.round{
+  border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: -40px;
+    right: auto;
+  top: -8px;
+    bottom: auto;
+    border: 32px solid;
+    border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: #E3DFDF transparent transparent transparent;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: -40px;
+    right: auto;
+  top: 30px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: -20px;
+    right: auto;
+  top: 38px;
+    bottom: auto;
+    border: 12px solid;
+    border-color: lightyellow lightyellow transparent transparent;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -8px;
+  right: auto;
+  top: auto;
+    bottom: -40px;
+    border: 32px solid;
+    border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+  right: auto;
+  top: auto;
+    bottom: -20px;
+    border: 22px solid;
+    border-color: transparent transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+  right: auto;
+  top: auto;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 38px;
+  right: auto;
+  top: auto;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: lightyellow transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 30px;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 38px;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: lightyellow lightyellow transparent transparent;
+}
+/*
+    left: -8px;
+    right: auto;
+    top: auto;
+    bottom: -40px;
+    border: 32px solid;
+    border-color: transparent transparent transparent #666;
+    left: 0px;
+  right: auto;
+  top: auto;
+    bottom: -20px;
+    border: 22px solid;
+    border-color: transparent transparent transparent lightyellow;
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -8px;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: auto;
+    right: 0px;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: lightyellow lightyellow transparent transparent;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -40px;
+    top: 30px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: #666 transparent transparent #666;
+}
+.tri-right.right-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: auto;
+    right: -20px;
+  top: 38px;
+    bottom: auto;
+    border: 12px solid;
+    border-color: lightyellow transparent transparent lightyellow;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: auto;
+    right: -40px;
+  top: -8px;
+    bottom: auto;
+    border: 32px solid;
+    border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: auto;
+    right: -20px;
+  top: 0px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: lightyellow transparent transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+

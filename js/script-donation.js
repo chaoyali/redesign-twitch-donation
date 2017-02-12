@@ -50,7 +50,6 @@ $(document).ready(function(){
 		// $('.tab-content-no1').css("display", "block");}, 2500);
 	});
 
-
 	$(".button").click(function(){
 		detectSelectedButton();
 	});

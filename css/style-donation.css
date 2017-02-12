@@ -1,13 +1,18 @@
  html {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-    font-size: 14px;
+    font-size: 12px;
+    color: #433f4a;
+}
+
+h2 {
+    text-align: center;
 }
 
 .modal {
-    /*display: none;  Hidden by default */
+    display: none;  /*Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 50px; /* Location of the box */
+    padding-top: 40px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -79,7 +84,7 @@
     font-size: 1.3rem;
     -web-margin-before: 1.3rem;
     position: absolute;
-    top: 1rem; 
+    top: 1.4rem; 
     left: 80px;
     font-weight: normal;
 
@@ -229,6 +234,9 @@ label {
 .donation-input-wrap .donation-input-title{
     width: 30%;
     float: left;
+    color: #322f37;
+    margin-top: 2px;
+    font-weight: 500;
 }
 
 .donation-input-wrap .donation-input-content {
@@ -341,7 +349,7 @@ textarea:focus {
 }
 
 #back-button {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 

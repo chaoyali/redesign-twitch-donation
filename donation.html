@@ -35,55 +35,75 @@
 						<label for="tab1">Money Donation</label>
 
 						<div class="tab-content">
-
-							<div class="announcement">
-								<div class="profile-photo" id="profile-photo-announcement"></div>
-								<div class="talk-bubble tri-right left-top">
-  								<div class="talktext">
-									<p>Thanks for donating! I will read it at the end of the game ヽ(´ｰ｀ )ﾉ Donations non-refundable, thanks! I don't click on links or play song requests, sorry friend!</p>
+							<div class="tab-content-no1">
+								<div class="announcement">
+									<div id="photo-wrap">
+										<div class="profile-photo" id="profile-photo-announcement"></div>
 									</div>
-								</div>
-							</div>
-
-							<div class="donation-input">
-								<div class="donation-input-wrap">
-
-									<div class="donation-input-title">Donation Amount</div>
-									<div class="donation-input-content">
-										<button class="button selected" id="donate1">$2</button>
-										<button class="button" id="donate2">$10</button>
-										<button class="button" id="donate3">$25</button>
-										<button class="button" id="donate4">$50</button>
-										<button class="button" id="donate5">$100</button>
-										<button class="button" id="donate6">Other</button>
-										<div id="donation-result">
-											<p>You will donate $</p>
-											<input type="text">
-											<p>to chaoya.</p>
+									<div id="bubble-wrap">
+										<div class="talk-bubble tri-right left-top">
+		  								<div class="talktext">
+											<p>Thanks for donating! I will read it at the end of the game ヽ(´ｰ｀ )ﾉ Donations non-refundable, thanks! I don't click on links or play song requests, sorry friend!</p>
+											</div>
 										</div>
 									</div>
 								</div>
-								
-								<hr>
+								<div class="donation-input">
+									<div class="donation-input-wrap">
 
-								<div class="donation-input-wrap">
-
-									<div class="donation-input-title">Donation Message</div>
-
-									<div class="donation-input-message">
-										<div id="donation-message">
-											<textarea name="Text1" cols="40" rows="5" placeholder="Your message here..."></textarea>
+										<div class="donation-input-title">Donation Amount</div>
+										<div class="donation-input-content">
+											<button class="button selected" id="donate1">$2</button>
+											<button class="button" id="donate2">$10</button>
+											<button class="button" id="donate3">$25</button>
+											<button class="button" id="donate4">$50</button>
+											<button class="button" id="donate5">$100</button>
+											<button class="button" id="donate6">Other</button>
+											<div id="donation-result">
+												<p>You will donate $</p>
+												<input id="donate-ammount-field" type="text">
+												<p>to chaoya.</p>
+											</div>
 										</div>
 									</div>
+									
+									<hr>
+
+									<div class="donation-input-wrap">
+
+										<div class="donation-input-title">Donation Message</div>
+
+										<div class="donation-input-message">
+											<div id="donation-message">
+												<textarea name="Text1" cols="40" rows="5" placeholder="Your message here..."></textarea>
+											</div>
+										</div>
+
+									</div>
+									<br>
+									<br><br>
 
 								</div>
-								<br>
-								<br><br>
+								<button class="big-button" id="donate-button">Donate Now</button>
+	<!-- 
+								<form >
+									<input type = "text" name = "name" style="display: none;"/>
+									<button type = "submit" id="donate-button">Donate Now</button> 
+								</form> -->
+
 
 							</div>
 
-							<button id="donate-button">Donate Now</button>
+						
 
+
+							<div class="tab-content-no2" id="thankyou-page">
+									<div class="thankyou-img">
+										<img src="./img/thankyou.png" alt="">
+									</div>
+									<p>Thank you for your donation, Jack. Your donation can help me improve the quality of the stream channel.</p>
+									<button class="big-button" id="back-button">Back</button>
+							</div>
 						</div>
         	</div>
 

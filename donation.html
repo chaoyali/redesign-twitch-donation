@@ -3,17 +3,21 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="./css/style-donation.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="./css/font-awesome-animation.min.css">
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	</head>
 
 	<body>
-		<h2>Click the button to donate</h2>
+		<img id="background" src="./img/bg.png" alt="">
+		<a id="myBtn"><img id="donation-button" src="./img/donation-button.png" alt=""></a>
+		<!-- <h2>Click the button to donate</h2> -->
 
 		<!-- Trigger/Open The Modal -->
-		<button class="big-button" id="myBtn">Donate to chaoya</button>
+		<!-- <button class="big-button" id="myBtn">Donate to chaoya</button> -->
 
 		<!-- The Modal -->
 		<div id="myModal" class="modal">
+			<img id="mini-view" src="./img/mini-view.png">
 
 		  <!-- Modal content -->
 		  <div class="modal-content">
@@ -43,7 +47,7 @@
 									<div id="bubble-wrap">
 										<div class="talk-bubble tri-right left-top">
 		  								<div class="talktext">
-											<p>Thanks for donating! I will read it at the end of the game ヽ(´ｰ｀ )ﾉ Donations non-refundable, thanks! I don't click on links or play song requests, sorry friend!</p>
+											<p class="note-text">Thanks for donating! I will read it at the end of the game ヽ(´ｰ｀ )ﾉ Donations non-refundable, thanks! I don't click on links or play song requests, sorry friend!</p>
 											</div>
 										</div>
 									</div>
@@ -87,13 +91,6 @@
 
 								</div>
 								<button class="big-button" id="donate-button">Donate Now</button>
-	<!-- 
-								<form >
-									<input type = "text" name = "name" style="display: none;"/>
-									<button type = "submit" id="donate-button">Donate Now</button> 
-								</form> -->
-
-
 							</div>
 
 						
@@ -113,9 +110,100 @@
         	<input type="radio" name="tabs" id="tab2" >
 					<div class="tab-label-content" id="tab2-content">
 						<label for="tab2">Wish List</label>
-						<div class="tab-content">Wish List - Coming Soon.
+						<div class="tab-content">
+
+							<div class="announcement">
+								<div id="photo-wrap">
+									<div class="profile-photo" id="profile-photo-announcement"></div>
+								</div>
+
+								<div id="bubble-wrap">
+									<div class="talk-bubble tri-right left-top">
+	  								<div class="talktext">
+										<p class="note-text">PO Box: If you want to send me something for whatever reason. This is how you format it.</p>
+										<p class="note-text">ATTN: Sneaky, </p>
+										<p class="note-text">Cloud9 Esports Inc, </p>
+										<p class="note-text">PO Box 5697   Santa Monica, CA 90409</p>
+										<!-- <p><br>yes i will sign stuff and return it Clothing size: I wear medium in mens</p> -->
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="item-list">
+								<div class="wishlist-item" id="item1">
+									<div id="wl-img-container">
+										<img class="item-img" src="./img/gift.png" alt="">
+									</div>
+									<div id="wl-desc-container">
+										<p>Super Smash Bros Gamecube Controller</p>
+										<p>I need it for game. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+									<div id="wl-but-container">
+										<p>$26.99</p>
+										<img class="item-img" src="./img/amazon-button.png" alt="">
+									</div>
+								</div>
+								<div class="wishlist-item" id="item1">
+									<div id="wl-img-container">
+										<img class="item-img" src="./img/gift.png" alt="">
+									</div>
+									<div id="wl-desc-container">
+										<p>Super Smash Bros Gamecube Controller</p>
+										<p>I need it for game. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+									<div id="wl-but-container">
+										<p>$26.99</p>
+										<img src="./img/amazon-button.png" alt="">
+									</div>
+								</div>
+								<div class="wishlist-item" id="item1">
+									<div id="wl-img-container">
+										<img class="item-img" src="./img/gift.png" alt="">
+									</div>
+									<div id="wl-desc-container">
+										<p>Super Smash Bros Gamecube Controller</p>
+										<p>I need it for game. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+									<div id="wl-but-container">
+										<p>$26.99</p>
+										<img src="./img/amazon-button.png" alt="">
+									</div>
+								</div>
+								<div class="wishlist-item" id="item1">
+									<div id="wl-img-container">
+										<img class="item-img" src="./img/gift.png" alt="">
+									</div>
+									<div id="wl-desc-container">
+										<p>Super Smash Bros Gamecube Controller</p>
+										<p>I need it for game. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+									<div id="wl-but-container">
+										<p>$26.99</p>
+										<img src="./img/amazon-button.png" alt="">
+									</div>
+								</div>
+								<div class="wishlist-item" id="item1">
+									<div id="wl-img-container">
+										<img class="item-img" src="./img/gift.png" alt="">
+									</div>
+									<div id="wl-desc-container">
+										<p>Super Smash Bros Gamecube Controller</p>
+										<p>I need it for game. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+									<div id="wl-but-container">
+										<p>$26.99</p>
+										<img src="./img/amazon-button.png" alt="">
+									</div>
+								</div>
+
+							</div>
+
 						</div>
         	</div>
+
         	<input type="radio" name="tabs" id="tab3" >
 					<div class="tab-label-content" id="tab3-content">
 						<label for="tab3">Top Donators</label>

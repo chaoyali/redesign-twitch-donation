@@ -67,8 +67,13 @@ body {
 }
 
 #tab2-content .tab-content {
-    height: 430px;
+    height: 455px;
     overflow: auto;
+}
+
+#tab3-content .tab-content {
+    width: 100%;
+    margin-top: -20px;
 }
 
 /* Add Animation */
@@ -88,7 +93,7 @@ body {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .close:hover,
@@ -102,7 +107,7 @@ body {
     padding: 2px 16px;
     background-color: #181422;
     color: white;
-    height: 70px;
+    height: 60px;
     position: relative;
 }
 
@@ -112,7 +117,7 @@ body {
     font-size: 1.3rem;
     -web-margin-before: 1.3rem;
     position: absolute;
-    top: 1.4rem; 
+    top: 1.1rem; 
     left: 80px;
     font-weight: normal;
 
@@ -131,7 +136,7 @@ body {
 
 
 #profile-photo-header {
-    margin-top: 15px;
+    margin-top: 12px;
     width: 40px;
     height: 40px;
 }
@@ -243,7 +248,7 @@ label {
 .tabs-border {
     position: absolute;
     width: 100%;
-    top: 116px;
+    top: 106px;
 }
 
 
@@ -314,11 +319,28 @@ label {
     text-align: center;
 }
 
+#donation-result select {
+    width: 50px;
+    height: 20px;
+    border: 1px solid #dad8de;
+    color: #706a7c;
+    box-sizing: border-box;
+    background: white;
+    font: inherit;
+    text-align: center;
+    border-radius: 0px;
+}
+
 #donation-result input:focus {
     outline: none !important;
     box-shadow: 0 0 2px gray;
     text-align: center;
 
+}
+
+#notes{
+    font-size: 8px;
+    font-style: italic;
 }
 
 .donation-input-wrap .donation-input-message {
@@ -770,6 +792,115 @@ textarea:focus {
     bottom: -13px;
 }
 
+.top-one-person {
+    height: 48px;
+}
 
+.top-one-person:nth-child(even) {
+    background: #EFEEF1;
+}
+
+.top-one-person:nth-child(odd) {
+    background: #F5F5F5;
+}
+
+
+
+#top-rank {
+    width: 20%;
+    float: left;
+    text-align: center;
+    height: 45px;
+}
+
+#top-rank div {
+    line-height: 45px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+#top-rank i {
+    line-height: 45px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 13px;
+}
+
+#top-photo {
+    width: 20%;
+    float: left;
+    text-align: center;
+    height: 45px;
+}
+
+#top-photo img {
+    width: 25px; 
+    margin-top: 12px;
+    margin-right: 60px;
+}
+
+#trophy::before {
+    font-size: 20px; 
+}
+
+#top-name {
+    width: 20%;
+    float: left;
+    text-align: center;
+    height: 45px;
+    /*font-size: 12px;*/
+}
+
+#top-name p {
+    margin-top: 16.5px;
+}
+
+#top-amount {
+    width: 40%;
+    float: left;
+    text-align: center;
+    height: 45px;
+}
+
+#top-amount p {
+    display: inline-block;
+    margin-top: 16.5px;
+}
+
+#no-one {
+    color: #6441a4;
+    /*height: 70px;*/
+    /*font-size: 14px;*/
+}
+
+/*
+#no-one #top-name p {
+    margin-top: 26.5px;
+}
+
+#no-one #top-amount p {
+    margin-top: 26.5px;
+}*/
+
+
+
+
+
+
+
+
+/*#top-amount i {
+    color: #6441a4;
+}*/
+/*
+table {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #EFEEF1;
+}
+*/
 
 

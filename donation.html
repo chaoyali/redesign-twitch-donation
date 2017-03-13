@@ -4,6 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/style-donation.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<link rel="stylesheet" href="./css/font-awesome-animation.min.css">
+		<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	</head>
 
@@ -36,7 +37,7 @@
 
 					<input type="radio" name="tabs" id="tab1" checked>
 					<div class="tab-label-content" id="tab1-content">
-						<label for="tab1">Money Donation</label>
+						<label for="tab1"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Money Donation</label>
 
 						<div class="tab-content">
 							<div class="tab-content-no1">
@@ -64,10 +65,18 @@
 											<button class="button" id="donate5">$100</button>
 											<button class="button" id="donate6">Other</button>
 											<div id="donation-result">
-												<p>You will donate $</p>
+												<p>You will donate </p>
 												<input id="donate-ammount-field" type="text">
+												<select>
+													<option value="usd">usd</option>
+													<option value="cad">cad</option>
+												</select>
 												<p>to chaoya.</p>
 											</div>
+											<div>
+												<p id="notes">Any donation over $3.00 will trigger the text to broadcast application on the stream. Donation over $100.00 will get my homemade gifts.</p>
+											</div>
+
 										</div>
 									</div>
 									
@@ -109,7 +118,7 @@
 
         	<input type="radio" name="tabs" id="tab2" >
 					<div class="tab-label-content" id="tab2-content">
-						<label for="tab2">Wish List</label>
+						<label for="tab2"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Wish List</label>
 						<div class="tab-content">
 
 							<div class="announcement">
@@ -206,8 +215,221 @@
 
         	<input type="radio" name="tabs" id="tab3" >
 					<div class="tab-label-content" id="tab3-content">
-						<label for="tab3">Top Donators</label>
-						<div class="tab-content">Top Donators - Coming Soon.
+						<label for="tab3"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Top Donors</label>
+						<div class="tab-content">
+							<div class="top-one-person" id="no-one">
+								<div id="top-rank">
+									<i class="fa fa-trophy" id="trophy" aria-hidden="true"></i>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>2</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>3</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>4</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>5</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>6</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>7</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>8</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>9</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+							<div class="top-one-person">
+								<div id="top-rank">
+									<div>10</div>
+								</div>
+								<div id="top-photo">
+									<img src="./img/avatar1.png" alt="">
+								</div>
+								<div id="top-name">
+									<p>Air_Shampoo</p>
+								</div>
+								<div id="top-amount">
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+									<p>$2000</p>&nbsp;&nbsp;&nbsp;
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+									<p>$5000</p>
+								</div>
+							</div>
+
+
+							
+							  <!-- <table style="width:100%">
+	
+
+							<tr>
+							  	<td><i class="fa fa-trophy" id="trophy" aria-hidden="true"></i></td>
+							    <td><img src="./img/avatar1.png" alt=""></td>
+							    <td><p>Air_Shampoo</p></td> 
+							    <td>
+										<i class="fa fa-money" aria-hidden="true"></i>
+										<p>$2000</p>
+										<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+										<p>$5000</p>
+							    </td>
+							  </tr>
+
+							  <tr>
+							  	<td><p>2</p></td>
+							    <td><img src="./img/avatar1.png" alt=""></td>
+							    <td><p>Air_Shampoo</p></td> 
+							    <td>
+										<i class="fa fa-money" aria-hidden="true"></i>&nbsp;
+										<p>$2000</p>&nbsp;&nbsp;&nbsp;
+										<i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;
+										<p>$5000</p>
+							    </td>
+							  </tr> 
+							 
+							</table>-->
+
+
+
 						</div>
         	</div>
         	<div class="slide"></div>
